@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/employeeListItem_name"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Students First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/employeeListItem_name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/employeeListItem_lastName"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Student Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/employeeListItem_email"
+        android:layout_margin="20dp"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:text="Student Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+
+        android:id="@+id/employeeListItem_date"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:text="Student date of birtg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/employeeListItem_email"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
